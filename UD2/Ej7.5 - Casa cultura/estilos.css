@@ -1,0 +1,120 @@
+
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  background-color: #f2f2f2;
+}
+
+#franjasuperior{
+    background-color: #3a3a3a;
+    padding: 10px;
+    padding-left: 40px;
+    color: white;
+}
+
+#tendenciastexto{
+    color: rgba(153,153,153);
+    margin-left: 20px;
+}
+
+#cabecera {
+    background-color: rgb(195, 78, 92);
+    padding: 10px;
+    padding-left: 30px;
+    color: white;
+    display: flex;
+}
+
+#logoayto{
+    height: 72px;
+}
+#titulo {
+    padding: 10px;
+}
+
+#contenido{
+    margin-top: 0px;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    /*flex-flow: row wrap;*/
+}
+
+
+
+
+#formulario{
+    padding: 40px;
+    padding-top: 20px;
+    background-color: white;
+
+    border-top-style: solid;    
+    border-top-width: 5px;
+    border-top-color: rgb(195, 78, 92);
+    border-radius: 7px;
+    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-image: url('logoRojo.png');
+    
+    flex: 3;
+    margin: 50px 25px 50px 25px;
+}
+
+#contacto{
+    margin: 50px 25px 50px 25px;
+    flex: 1;
+
+    padding: 40px;
+    padding-top: 20px;
+    background-color: #fff2f2;
+
+    border-top-style: solid;    
+    border-top-width: 5px;
+    border-top-color: rgb(195, 78, 92);
+    border-radius: 7px;
+    
+}
+
+h1{
+  font-weight: normal;
+}
+
+
+#errores{
+    background-color: #fff2f2;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    border: 1px;
+    border-color:rgb(195, 78, 92);
+    border-style: solid;
+    border-radius: 7px;
+}
+#errores:empty {
+   display: none;
+}
+
+form{
+    background-color: #eeeeee90;
+    padding: 1rem;
+}
+
+input, button, select{
+    border: 2px solid #c34e5c;
+    margin-bottom: 1rem;
+}
+
+select{
+    background-color: white;
+    min-width: 20ch;
+}
+
+button{
+    background-color: #c34e5c;
+    padding: 0.5rem;
+    min-width: 20ch;
+    color:whitesmoke;
+}

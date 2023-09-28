@@ -1,0 +1,10 @@
+#divResultado:empty{
+	display:none;
+}
+
+#divResultado{
+	border: 2px solid var(--code);
+	padding: 0.25rem;
+	border-radius: 5px;;
+}
+

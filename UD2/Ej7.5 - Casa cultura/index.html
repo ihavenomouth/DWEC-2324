@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Casa de la cultura</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <script defer src="code.js"></script>
+</head>
+
+<body>
+    <div id="franjasuperior">TENDENCIAS: <span id="tendenciastexto">José María Mir rediseña el logotipo de Correos.</span></div>
+    <div id="cabecera">
+        <img id="logoayto" src="logo.png" />
+        <p id="titulo">AYUNTAMIENTO DE UTRERA - CASA DE LA CULTURA</p>
+    </div>
+    <div id="contenido">
+
+        <!-- El formulario de inscripción irá dentro de esta división -->
+        <div id="formulario"/>
+        <h1>Curso de fotografía</h1>
+        <p>El 18 de Mayo se ha concertado un curso de fotograría para aprender a manejar técnicas de dirección de modelos,
+        iluminación, revelado y postproducción. El curso será impartido en las instalaciones del centro norte.</p>
+
+        <p>se pueden matricular en el curso aquellos mayores de edad hasta 67 años y que hay dos turnos que serán Mañana y Tarde</p>
+        <p>Información relevante: los cursos están subvencionados por fondos procedentes de la Unión Europea.</p>
+        <form action="">
+            <label for="txtNombre">Nombre:</label><br>
+            <input type="text" name="txtNombre" id="txtNombre"><br>
+
+            <label for="txtEdad">Edad:</label><br>
+            <input type="number" name="txtEdad" id="txtEdad"><br>
+
+            <label for="txtTurno">Turno:</label><br>
+            <input type="text" name="txtTurno" id="txtTurno"><br>
+            
+            <!-- <label for="txtTurno">Turno:</label><br>
+            <select name="txtTurno">
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+            </select><br> -->
+
+            <label for="txtPassword1">Password:</label><br>
+            <input type="password" name="txtPassword1" id="txtPassword1"><br>
+
+            <label for="txtPassword2">Repita el password:</label><br>
+            <input type="password" name="txtPassword2" id="txtPassword2"><br>
+            <br>
+
+            <button id="btnValidar" type="button">Validar</button>
+
+
+            
+        </form>
+        <div id="errores"></div>
+        </div>
+
+
+        <div id="contacto">
+            <h1>Contacto</h1>
+            <p><b>Dirección:</b> C/ Rodrigo Caro, 3</p>
+            <p><b>Teléfonos:</b> 95 586 09 31</p>
+            <p><b>Fax:</b> 95 586 20 56</p>
+            <p><b>Correo electrónico:</b> cultura@utrera.org</p>
+            <p><b>Delegada de Cultura:</b> Tamara Casal Hermoso</p>
+            <p><b>Técnico:</b> Rafael Arciniega Vela</p>
+            <p><b>Horario de Atención al Ciudadano:</b> de 9 h a 14 h y de 17 h. a 20 horas, de lunes a jueves – viernes de 9 h. a 14 h.</p>
+            <p><b>Horario de Apertura:</b> de 9 h a 14 h y de 16’30 h. a 21’30 horas, de lunes a viernes.</p>
+            <p><b>Horario de Verano (del 14 de junio al 13 de septiembre):</b> de 9 h a 14 h, de lunes a viernes.</p>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
