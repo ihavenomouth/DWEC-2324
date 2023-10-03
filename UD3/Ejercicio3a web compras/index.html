@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<script defer src="code.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="imprimir.css" type="text/css" media="print" />
+</head>
+<body>
+	<h1 class="print">Web de compras</h1>
+
+	<form action="" id="formAnadirProducto">
+		<label for="txtProducto">Producto</label>
+		<select required name="txtProducto" id="txtProducto"></select>
+		<label for="txtCantidad">Cantidad</label>
+		<input type="number" name="txtCantidad" id="txtCantidad" required step="1"><br>
+		<button id="btnAñadir" type="button">Añadir al carrito</button>
+		<button id="btnVerPedido" type="button">Ver pedido</button>
+	</form>
+
+	<div id="divPedido" class="oculto print"></div>
+
+</body>
+</html>

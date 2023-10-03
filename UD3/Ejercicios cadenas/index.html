@@ -145,5 +145,24 @@ esPalíndromo("arriba la birra");
 esPalíndromo("dábale arroz a la zorra el abad");
 esPalíndromo("currito, dale al botoncito");
 	</pre>
+
+	<h2>Ejercicio 6</h2>
+	<p>Ejercicio 6: Un editor que utilizas en tu web te devuelve las listas creadas así: <code>"* Uno\n* Dos\n* Tres \n* Cuatro\n"</code>.
+	Crea una función que reciba esas cadenas de caracteres y devuelva otra equivalente de una lista HTML:
+	<pre>
+&lt;ul>
+  &lt;li&gt;Uno&lt;/li&gt;
+  &lt;li&gt;Dos&lt;/li&gt;
+  &lt;li&gt;Tres&lt;/li&gt;
+  &lt;li&gt;Cuatro&lt;/li&gt;
+&lt;/ul&gt;
+	</pre>
+	<h3>Solución</h3>
+	<pre>
+function convierteLista(s){
+  return "&lt;ul&gt;"+s.replaceAll("* ","&lt;li&gt;").replaceAll("\n","&lt;/li&gt;")+"&lt;/ul&gt;"
+}
+	</pre>
+</p>
 </body>
 </html>
