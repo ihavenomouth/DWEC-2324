@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+	<h1>Ejercicios de strings</h1>
+	<h2>Ejercicio 1</h2>
+	<p>Ve a la web <a href="http://www.aliexpress.com">www.aliexpress.com</a> y abre la consola. Recupera la URL y reemplaza el primer .com por un .es y pásala a
+	mayúsculas. ¿En qué posición empieza el último ES que aparece?</p>
+
+	<pre>
+location.href = http://www.aliexpress.com
+let pos = location.href.replace("es","com").toUpperCase().lastIndexOf("ES");
+console.log( `Posición del último ES: ${pos}`);
+	</pre>
+
+	<h2>Ejercicio 2</h2>
+	<p>Partiendo de "caca de la vaca" crea una cadena que tenga un - entre cada letra. Es decir: <code>c-a-c-a- -d-e-
+	-l-a- -v-a-c-a</code></p>
+	<pre>
+let s = "caca de la vaca";
+
+//Solución 1: usando un bucle y quitando el último -
+let sol="";
+for(let i=0 ; i&lt;s.length ; i++){ 
+	sol+=s[i]+"-"; 
+}
+sol = sol.slice(0,-1)
+
+//Solución 2: usando un bucle con un condicional
+sol="";
+for(let i=0 ; i&lt;s.length ; i++){
+  sol+=s[i]
+  if(i&lt;s.length-1)
+    sol+="-"; 
+}
+
+//Solución 3: con replaceAll y slice
+s.replaceAll("","-").slice(1).slice(0,-1)
+	</pre>
+
+	<h2>Ejercicio 3</h2>
+	<p>Partiendo del <code>navigator.userAgent</code> suma todos los números que aparecen en la cadena de caracteres.
+	Por ejemplo si el userAgent es <code>Firefox/117.0</code> el resultado será 9 (1+1+7+0).
+	<em>Nota</em>: tal vez las funciones <code>isNaN()</code> y <code>Number()</code> puedan serte de utilidad.</p>
+	<pre>
+// Solución 1:
+//1.- Quitamos de la cadena todo lo que no sea un número usando
+      una expresión regular
+let s = navigator.userAgent.replaceAll(/[^1234567890]/g, "");
+//2.- Recorremos la cadena sumando
+let suma=0;
+for(let i=0; i&lt;s.length; i++){
+	suma+= Number(s[i]);
+}
+console.log(suma);
+
+//Solución 2: directamente recorriendo la cadena
+let s = navigator.userAgent;
+let suma=0;
+for(let i=0; i&lt;s.length; i++){
+	//si el caracter no es un dígito lo ignoramos
+	if( ! isNaN( Number(s[i]) )){
+	  suma += Number(s[i]);		
+	}
+}
+console.log(suma);
+
+//Solución 3: usando triquiñuelas. Esta solución no es recomendable
+let suma = eval (navigator.userAgent.replaceAll(/[^1234567890]/g, "").replaceAll("","+").slice(1)+"0")
+	</pre>
+
+	<h2>Ejercicio 4</h2>
+	<p>Ejercicio 4a: Partiendo de "echa el freno, Magdaleno" haz que se cuenten el número de vocales que tiene el texto.</p>
+
+	<p>Ejercicio 4b: Haz que se devuelva una cadena de caracteres con el número de veces que aparece cada vocal. Por ejemeplo
+	<code>"a3, e4, i0, o2, u0"</code></p>
+
+	<pre>
+let s = "echa el freno, Magdaleno";
+
+//Solución 1 del 4a: quitando todo lo que no sea una vocal
+s.replaceAll(/[^aeiuo]/g, "").length
+
+//Solución 2 del 4a: usando un bucle
+let numa=0, nume=0, numi=0, numo=0, numu=0;
+for(let i =0; i&lt;s.length; i++){ 
+	switch (s[i]){ 
+		case 'a' : numa++; break 
+		case 'e' : nume++; break 
+		case 'i' : numi++; break 
+		case 'o' : numo++; break 
+		case 'u' : numu++; break 
+   }
+}
+console.log( `Nº vocales: ${numa + nume + numi + numo + numu}`);
+
+//Solución 1 del 4b:
+let sol = `a${ao.replaceAll(/[^a]/g,"").length}, e${ao.replaceAll(/[^e]/g,"").length}, ... `
+console.log( sol );
+
+//Solución 2 del 4b: usando un bucle
+let numa=0, nume=0, numi=0, numo=0, numu=0;
+for(let i =0; i&lt;s.length; i++){ 
+	switch (s[i]){ 
+		case 'a' : numa++; break 
+		case 'e' : nume++; break 
+		case 'i' : numi++; break 
+		case 'o' : numo++; break 
+		case 'u' : numu++; break 
+   }
+}
+console.log( `a${numa}, e${nume}, i${numi}, o${numo}, u${numu}`);
+	</pre>
+</body>
+</html>
