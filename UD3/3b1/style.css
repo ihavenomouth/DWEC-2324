@@ -1,0 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900);
+
+main >div{
+	outline: 1px solid var(--border);
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: var(--accent-bg);
+}

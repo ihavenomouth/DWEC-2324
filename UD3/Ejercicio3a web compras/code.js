@@ -25,7 +25,9 @@ function verPedido(){
 			</tr>
 		</thead>
 		<tbody>`;
+	
 	let total=0;
+	
 	for(let prod of arrCarrito){
 		tabla+="<tr>";
 		tabla += `<td>${prod[0]}</td><td>${prod[1]} €</td><td>${prod[2]}</td><td>${(prod[2] * prod[1]).toFixed(2)} €</td>`;
@@ -68,8 +70,8 @@ let arrProductos = [
 ];
 
 for(let i=0;i<arrProductos.length;i++){
-	let precio = arrProductos[i][1];
-	let nombre = arrProductos[i][0];
+	const precio = arrProductos[i][1];
+	const nombre = arrProductos[i][0];
 	document.getElementById("txtProducto").innerHTML += `<option value="${i}">${nombre} (${precio} €)</option>`;
 };
 
