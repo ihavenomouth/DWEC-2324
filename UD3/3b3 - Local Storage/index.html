@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<script defer src="code.js"></script>
+	<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Fichajes</h1>
+	</header>
+	<main>
+		<form action="">
+			<fieldset>
+				<legend>Fichar</legend>
+
+				<fieldset>
+					<legend>Entrada o Salida</legend>
+				
+					<div>
+						<input type="radio" id="entrada" name="entradasalida" value="entrada" checked />
+						<label for="entrada">Entrada</label>
+					</div>
+				
+					<div>
+						<input type="radio" id="salida" name="entradasalida" value="salida" />
+						<label for="salida">Salida</label>
+					</div>
+				</fieldset>
+
+
+				<button id="btnFichar" type="button">Fichar</button>
+				<button id="btnMostrar" type="button">Mostrar</button>
+				<button id="btnResetear" type="button">Resetear</button>
+			</fieldset>
+		</form>
+		<div id="divFichajes"></div>
+	</main>
+</body>
+</html>

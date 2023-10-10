@@ -1,0 +1,12 @@
+header{
+	background-image: url("engranajes.jpg");
+	background-position-y: center;
+	background-blend-mode: exclusion;
+	background-size: cover;
+}
+
+header h1{
+	font-weight: 200;
+	background-color: #0006;
+	border-radius: 20px;
+}
