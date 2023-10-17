@@ -184,12 +184,28 @@ let arrayViajes = [
   ['Jorge',  ['Sevilla']]
 ];
 
+//1.- Recuperamos el select y la división donde mostrar los datos
 let selectPersona = document.querySelector("#selectPersona");
-arrayViajes.forEach( (lineaViajes,i ) => {
-	selectPersona.innerHTML += `<option value="${i}">${lineaViajes[0]}</option>`;
-});
+let divej4b12 = document.querySelector("#ej4b12");
 
+//2.- Recorremos el array de viajes para rellenar el Select
+for(let i=0; i<arrayViajes.length; i++) {
+	const lineaViajes = arrayViajes[i];
+	selectPersona.innerHTML += `<option value="${i}">${lineaViajes[0]}</option>`;
+}
+
+// 3.- Incluimos un eventListener para cuando cambie el alor seleccionado del select
 selectPersona.addEventListener( "change", ()=>{
 	let indiceSeleccionado = selectPersona.value;
-	alert("Cambio a "+ arrayViajes[indiceSeleccionado][0] );
+	const personaSeleccionada = arrayViajes[indiceSeleccionado][0];
+	ej4b12.innerHTML="<p>Viajes de " + personaSeleccionada +"</p>";
+
+	const viajesPersona = arrayViajes[indiceSeleccionado][1];
+	let sol ="<ul>";
+	for (let viaje of viajesPersona) {
+		sol += `<li>${viaje}</li>`;
+	}
+	sol+="</ul>";
+	ej4b12.innerHTML += sol;
 });
+

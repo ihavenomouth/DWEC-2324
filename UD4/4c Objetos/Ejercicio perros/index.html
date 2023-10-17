@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <script defer src="code.js"></script>
+	 <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Ejercicio de los perros</h1>
+    <p>
+      Crea una web que contenga tres <i>textboxes</i>, uno para el nombre del
+      perro, otro para la edad y otro para la raza. Además habrá los siguientes
+      botones con estos comportamientos:
+    </p>
+    <ul>
+      <li>
+        Botón de <em>Añadir</em>: Se creará un objeto de tipo Perro y se añadirá a un
+        array de perros.
+      </li>
+      <li>
+        Botón de <em>Ordenar por inserción</em>: Se mostrarán todos los perros con sus
+        datos en una lista no ordenada (<code>&lt;ul&gt;</code>) en el orden en el que se
+        insertaron.
+      </li>
+      <li>
+        Botón de <em>Ordenar por edad</em>: Se mostrarán todos los perros con sus datos
+        en una lista (<code>&lt;ol&gt;</code>) ordenados por edad.
+      </li>
+      <li>
+        Botón de <em>Ordenar por raza</em>: Se mostrarán todos los perros con sus datos
+        en una lista (<code>&lt;ul&gt;</code>) ordenados por la raza alfabéticamente.
+      </li>
+      <li>
+        Tendrás que crear un constructor de objetos de tipo <code>Perro</code> que devuelva
+        un objeto de tipo <code>Perro</code> que incluya también un método llamado
+        <code>mostrarDatos()</code> que muestre los datos del perro.
+      </li>
+    </ul>
+
+	 <form action="">
+	 <fieldset>
+	   <legend>Añadir perro</legend>
+		<label for="txtNombre">Nombre</label>
+		<input type="text" name="txtNombre" id="txtNombre">
+
+		<label for="txtEdad">Edad</label>
+		<input type="number" name="txtEdad" step="1" id="txtEdad">
+
+		<label for="txtRaza">Raza</label>
+		<input type="text" name="txtRaza" id="txtRaza">
+
+		<div class="botonera">
+			<button id="btnAnadir" type="button">Añadir</button>
+			<button id="btnOrdIns" type="button">Ordenar por inserción</button>
+			<button id="btnOrdEdad" type="button">Ordenar por edad</button>
+			<button id="btnOrdRaza" type="button">Ordenar por raza</button>
+		</div>
+	 </fieldset>
+	 </form>
+
+	 <div id="divResultado" class="notice"></div>
+  </body>
+</html>
