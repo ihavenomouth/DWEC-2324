@@ -5,63 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="objetos.js"></script>
     <script defer src="code.js"></script>
   </head>
   <body>
-    <h1>Ejercicio de los perros</h1>
+    <h1>Ejercicio de las cremas</h1>
     <p>
-      Crea una web que contenga tres <i>textboxes</i>, uno para el nombre del
-      perro, otro para la edad y otro para la raza. Además habrá los siguientes
-      botones con estos comportamientos:
+      Crea un constructor de objetos de tipo <code>Crema</code> que tenga un nombre, precio y marca. Además contendrá un array de
+      objetos de tipo <code>Ingrediente</code>, un método <code>addIngrediente(nombre, cantidad)</code> que permitirá añadir un objeto al array,
+      un método <code>removeIngrediente(i)</code> que permite eliminar el iésimo ingrediente y una función <code>toHTMLTable()</code> que devuelva
+      una tabla HTML con todos los ingredientes (se usará el método <code>toHTMLRow()</code> de los ingredientes).
     </p>
-    <ul>
-      <li>
-        Botón de <em>Añadir</em>: Se creará un objeto de tipo Perro y se añadirá a un
-        array de perros.
-      </li>
-      <li>
-        Botón de <em>Ordenar por inserción</em>: Se mostrarán todos los perros con sus
-        datos en una lista no ordenada (<code>&lt;ul&gt;</code>) en el orden en el que se
-        insertaron.
-      </li>
-      <li>
-        Botón de <em>Ordenar por edad</em>: Se mostrarán todos los perros con sus datos
-        en una lista (<code>&lt;ol&gt;</code>) ordenados por edad.
-      </li>
-      <li>
-        Botón de <em>Ordenar por raza</em>: Se mostrarán todos los perros con sus datos
-        en una lista (<code>&lt;ul&gt;</code>) ordenados por la raza alfabéticamente.
-      </li>
-      <li>
-        Tendrás que crear un constructor de objetos de tipo <code>Perro</code> que devuelva
-        un objeto de tipo <code>Perro</code> que incluya también un método llamado
-        <code>mostrarDatos()</code> que muestre los datos del perro.
-      </li>
-    </ul>
+    <p>
+      Los objetos de tipo <code>Ingrediente</code> tendrán un nombre y una cantidad en gramos además de un método <code>toHTMLRow()</code> que
+      devuelva una fila de una tabla HTML con todos los atributos.
+    </p>
+    <p>
+      <strong>Nota:</strong> en el ejercicio se pide que se devuelva una fila HTML o una tabla HTML, aunque eso es algo que aún no hemos visto. Puedes buscar información sobre cómo hacerlo o bien, de momento, puedes hacer que se devuelva el código HTML que generaría esa fila/tabla. 
+    </p>
 
-	 <form action="">
-	 <fieldset>
-	   <legend>Añadir perro</legend>
-		<label for="txtNombre">Nombre</label>
-		<input type="text" name="txtNombre" id="txtNombre">
+    <form action="">
+      <fieldset>
+        <legend>Gestionar ingredientes</legend>
+        <label for="txtNombre">Nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre" />
 
-		<label for="txtEdad">Edad</label>
-		<input type="number" name="txtEdad" step="1" id="txtEdad">
+        <label for="txtCantidad">Cantidad</label>
+        <input type="number" name="txtCantidad" step="1" id="txtCantidad" />
 
-		<label for="txtRaza">Raza</label>
-		<input type="text" name="txtRaza" id="txtRaza">
+        <label for="txtId">Id ingrediente a eliminar</label>
+        <input type="number" name="txtId" step="1" id="txtId" />
 
-		<div class="botonera">
-			<button id="btnAnadir" type="button">Añadir</button>
-			<button id="btnOrdIns" type="button">Ordenar por inserción</button>
-			<button id="btnOrdEdad" type="button">Ordenar por edad</button>
-			<button id="btnOrdRaza" type="button">Ordenar por raza</button>
-		</div>
-	 </fieldset>
-	 </form>
+        <div class="botonera">
+          <button id="btnAnadir" type="button">Añadir ingrediente</button>
+          <button id="btnEliminar" type="button">Eliminar ingrediente</button>
+          <button id="btnMostrar" type="button">Mostrar datos crema</button>
+        </div>
+      </fieldset>
+    </form>
 
-	 <div id="divResultado" class="notice"></div>
+    <div id="divResultado" class=""></div>
   </body>
 </html>
