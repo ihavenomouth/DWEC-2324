@@ -1,0 +1,7 @@
+.botonera{
+	display: flex;
+	gap: 1rem;
+}
+.botonera button{
+	flex-grow:1;
+}
