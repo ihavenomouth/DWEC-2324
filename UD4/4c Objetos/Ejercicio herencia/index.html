@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="shortcut icon" href="favicon">
+	<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<script defer src="code.js"></script>
+</head>
+<body>
+	<h1>Canciones y ficheros</h1>
+	<form action="">
+		<fieldset>
+			<legend>Datos</legend>
+			<label for="txtNombreFic">Nombre del fichero</label>
+			<input type="text" name="txtNombreFic" id="txtNombreFic">
+
+			<label for="txtTamaño">Tamaño en KB</label>
+			<input type="number" name="txtTamaño" id="txtTamaño">
+
+			<label for="txtNombreCan">Nombre de la canción</label>
+			<input type="text" name="txtNombreCan" id="txtNombreCan">
+
+			<label for="txtDuración">Duración</label>
+			<input type="number" name="txtDuración" id="txtDuración">
+
+			<input type="radio" name="txtTipo" id="txtRadioCanción" value="canción">
+			<label for="txtRadioCanción">Canción</label>
+			<input type="radio" name="txtTipo" id="txtRadioFichero" value="fichero">
+			<label for="txtRadioFichero">Fichero</label>
+		</fieldset>
+		<button type="button" id="btnAgregar">Agregar</button>
+		<button type="button" id="btnMostrar">Mostrar</button>
+	</form>
+
+	<div id="divResultado" class="notice"></div>
+</body>
+</html>
