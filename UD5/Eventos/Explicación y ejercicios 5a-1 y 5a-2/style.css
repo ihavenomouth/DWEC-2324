@@ -1,0 +1,33 @@
+
+*,::after,::before{
+	box-sizing: border-box;
+}
+
+.menu.oculto{
+	display:none;
+}
+
+#divTexto{
+	position: relative;
+}
+
+.menu{
+	position:absolute;
+	background-color: #66339980;
+	border: 3px solid rebeccapurple;
+	border-radius: 3px;
+	min-width: 20ch;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	padding: 0.25rem;
+	left: 2rem;
+  top: 2.5rem;
+}
+
+.menu p{
+	text-align: center;
+	background-color: rebeccapurple;
+	color: white;
+	margin-inline: -0.25rem;
+}
