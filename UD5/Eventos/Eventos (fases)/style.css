@@ -1,0 +1,22 @@
+
+*,::after,::before{
+	box-sizing: border-box;
+}
+
+body{
+  background-color: #222;
+  color: whitesmoke;
+}
+
+#idParrafo{
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+#idDiv{
+  border: 1px solid red;
+  padding: 0.5rem;
+}
+a{
+  color: turquoise;
+}

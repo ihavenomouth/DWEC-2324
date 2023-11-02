@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="code.js"></script>
+</head>
+<body>
+  <h1>Ejercicios de eventos</h1>
+
+  <h2>Ejercicio 5a-3</h1>
+  <p>Crea una web que contenga un emoji de una cara sonriente 😀. Cuando se haga click izquierdo en el emoji, cambiará por una cara triste 🙁. Si se hace doble click se cambiará a una cara molesta 😒. Si se hace click derecho se volverá a la cara sonriente original (y no se mostrará el menú contextual del navegador).</p>
+  
+  <p>Emoji: <span id="sEmoji">😀</span></p>
+  
+  <h2>Ejercicio 5a-4</h2>
+  <p>Crea una web con cualquier contenido en la que si pulsas la tecla 'a' muestre un alert con tu nombre. Si pulsas la tecla 'e' mostrará tu edad.</p>
+  <sup>Pista: añade el evento keyup al document y usa la propiedad del evento key para saber qué tecla se ha pulsado. </sup>
+
+
+    <h2>Ejercicio 5a-5</h2> 
+    <p>Crea una web con un textbox en el que escribir un código postal. El código postal tiene que ser un número de 5 cifras y sus dos primeras cifras tienen que estar entre 01 y 52.
+    En el momento en el que haya escrita 5 cifras se mostrará la provincia a la que pertenece ese código postal.
+    </p>
+
+    <form>
+      <label for="txtEj5a5">Código postal</label>
+      <input type="text" name="txtEj5a5" id="txtEj5a5">
+    </form>
+    <div class="notice" id="divResultado5a5"></div>
+
+
+</body>
+</html>
