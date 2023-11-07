@@ -3,6 +3,11 @@
 /////////////////////
 // FUNCTIONS
 /////////////////////
+
+/**
+ * Crea una tabla con los datos leídos del fichero
+ * @param {Object} contenido - Objeto con un array de datos de redes sociales
+ */
 const creaTabla = contenido =>{
   let s='<table></tr><th onclick="ordenar(1)">Red social</th><th onclick="ordenar(2)">Seguidores</th></tr>';
 
@@ -34,6 +39,7 @@ const ordenar = columna =>{
   }
   creaTabla( contenido );
 }
+
 /////////////////////
 // MAIN
 /////////////////////
@@ -50,7 +56,7 @@ fileInput.addEventListener("change", async () => {
   const [file] = fileInput.files;
 
   if (file) {
-    // Cuando se haya seleccionado
+    // Cuando se haya seleccionado, lo parseamos para convertirlo en un objeto
     contenido = JSON.parse( await file.text() );
     creaTabla( contenido );
   }
