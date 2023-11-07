@@ -1,0 +1,24 @@
+{
+  "arrRedesSociales" : [
+    {
+      "url": "https://www.facebook.com/julitamaria",
+      "nombre": "Ínstagram",
+      "seguidores": 45670
+    },
+    {
+      "url": "https://www.instagram.com/julitamaria",
+      "nombre": "Instagram",
+      "seguidores": 70854
+    },
+    {
+      "url": "https://www.pinterest.es/julitamaria/",
+      "nombre": "Pinterest",
+      "seguidores": 12348
+    },
+    {
+      "url": "https://www.youtube.com/@julitamaria",
+      "nombre": "Youtube",
+      "seguidores": 511348
+    }
+  ]
+}
