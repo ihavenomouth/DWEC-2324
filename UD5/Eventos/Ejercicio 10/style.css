@@ -1,0 +1,13 @@
+
+
+.output div{
+  background-color: var(--border);
+  padding-block: 0.25rem;
+  margin-bottom: 2px;
+}
+
+.output {
+  width:500px;
+  padding:0;
+  overflow: hidden;
+}
