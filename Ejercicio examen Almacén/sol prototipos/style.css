@@ -73,3 +73,5 @@ body > footer{
 	background-color: var(--accent-bg);
 }
 
+
+.oculto{ display: none;}
