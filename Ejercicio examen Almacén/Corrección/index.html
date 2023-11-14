@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Almacén</title>
+	<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script defer src="objetos.js"></script>
+	<script defer src="codigo.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Gestión de stock de almacén</h1>
+	</header>
+	<main>
+		<section class="formularios">
+			<h2>Formularios</h2>
+			<div class="formulario" id="frmAltaProducto">
+				<h2>Alta de producto</h2>
+				<form>
+					<label for="txtIdProducto">Id de producto</label>
+					<input type="number" size="40" maxlength="40" name="txtIdProducto" />
+					<label for="txtNombre">Nombre</label>
+					<input type="text" size="40" maxlength="40" name="txtNombre"></input>
+					<label for="txtPrecio">Precio</label>
+					<input type="number" size="12" maxlength="9" name="txtPrecio" />
+
+					<fieldset>
+						<legend>Tipo de producto</legend>
+						<label>
+							<input type="radio" name="txtTipo" value="movil"> Móvil
+						</label>
+						<label>
+							<input type="radio" name="txtTipo" value="carcasa"> Carcasa
+						</label>
+					</fieldset>
+
+
+					<fieldset id="fMovil">
+						<legend>Móvil</legend>
+						<label for="txtModelo">Modelo</label>
+						<input type="text" size="40" maxlength="40" name="txtModelo" />
+						<label>
+						<input type="checkbox" name="txtAndroid" checked> Android
+						</label>
+					</fieldset>
+
+					<fieldset id="fCarcasa">
+						<legend>Carcasa</legend>
+						<label for="txtMaterial">Material</label>
+						<select name="txtMaterial" id="txtMaterial">
+							<option value="">-[ Elige una opción]-</option>
+							<option value="plastico">Plástico</option>
+							<option value="abs">ABS</option>
+							<option value="madera">Madera</option>
+							<option value="cuero">Cuero</option>
+							<option value="tela">Tela</option>
+						</select>
+					</fieldset>
+
+					<br>
+					<input type="button" id="btnAltaProducto" value="Aceptar" />
+				</form>
+			</div>
+
+
+			<div class="formulario" id="frmEntradaSalidaStock">
+				<h2>Entrada/Salida de stock</h2>
+				<form>
+					<label for="txtIdProductoStock">Id de producto</label>
+					<input type="number" size="40" maxlength="40" name="txtIdProductoStock" />
+					<label for="txtNumUnidades">Nº de unidades</label>
+					<input type="number" size="40" maxlength="40" name="txtNumUnidades"></input>
+
+					<br>
+					<input type="button" id="btnEntradaSalidaStock" value="Entrada/Salida de Stock" />
+				</form>
+			</div>
+
+		</section>
+		<section class="listados">
+			<h2>Listados</h2>
+			<div id="listado"></div>
+		</section>
+		<section class="botones">
+			<h2>Botones</h2>
+			<form>
+				<fieldset>
+					<legend>Acciones</legend>
+					<button type="button" id="btnFormAltaProducto">Alta de producto</button>
+					<button type="button" id="btnFormEntradaSalidaStock">Modifica stock</button>
+					<button type="button" id="btnListadoCatalogo">Listado del catálogo</button>
+					<button type="button" id="btnListadoStock">Listado de stock</button>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Desarrollo del lado del cliente</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <!-- Enlaces a bootstrap-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css" />
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            margin-left: 10px;
+        }
+
+        form {
+            display: block;
+        }
+    </style>
+    <title>Tienda de bicicletas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <div id="principal">
+                        <h1>Acciones</h1>
+                        <div class="form-group">
+                            <form name="frmAcciones">
+                                <div class="col-md-6">
+                                    <input type="button" id="btnMostrarAlta" name="btnMostrarAlta"
+                                        class="btn btn-primary btn-block" value="Alta de bicicleta" />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="button" id="btnMostrarVenta" name="btnMostrarVenta"
+                                        class="btn btn-primary btn-block" value="Venta de bicicleta" />
+                                </div>
+                                <br><br>
+                                <div class="col-md-6">
+                                    <input type="button" id="btnMostrarTotales" name="btnMostrarTotales"
+                                        class="btn btn-primary btn-block" value="Totales" />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="button" id="btnMostrarListado" name="btnMostrarListado"
+                                        class="btn btn-primary btn-block" value="Listado separado" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h1>Totales</h1>
+                    <div id="totales">
+                        <h3>Bicicletas de carretera: 0 </h3>
+                        <h3>Bicicletas de montaña: 0 </h3>
+                        <h3>Total de bicicletas: 0 </h3>
+                        <h3>Total de ventas: 0 </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1>Formularios</h1>
+                <form class="form-horizontal" form="frmAltaBicicleta" name="frmAltaBicicleta">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Alta de bicicletas</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="txtLocalizador">Localizador</label>
+                            <div class="col-xs-4">
+                                <input id="txtLocalizador" name="txtLocalizador" placeholder="Localizador"
+                                    class="form-control input-md" type="text">
+
+                            </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="lstAnio">Año</label>
+                            <div class="col-xs-4">
+                                <select id="lstAnio" name="lstAnio" class="form-control">
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Multiple Radios -->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="rbtTipoBicicleta">Tipo bicicleta</label>
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <label for="rbtTipoBicicleta-0">
+                                        <input name="rbtTipoBicicleta" id="rbtTipoBicicleta-0" value="carretera"
+                                            checked="checked" type="radio">
+                                        Carretera
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label for="rbtTipoBicicleta-1">
+                                        <input name="rbtTipoBicicleta" id="rbtTipoBicicleta-1" value="montana"
+                                            type="radio">
+                                        Montaña
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="txtSuspensiones">Numero de suspensiones</label>
+                            <div class="col-xs-4">
+                                <input id="txtSuspensiones" name="txtSuspensiones" placeholder="Numero de suspensiones"
+                                    class="form-control input-md" type="text">
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="txtPlatos">Numero de platos</label>
+                            <div class="col-xs-4">
+                                <input id="txtPlatos" name="txtPlatos" placeholder="Numero de platos"
+                                    class="form-control input-md" type="text">
+
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="btnAltaBicicleta"></label>
+                            <div class="col-xs-4">
+                                <input type="button" id="btnAltaBicicleta" name="btnAltaBicicleta"
+                                    class="btn btn-primary" value="Alta bicicleta" />
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+                <form class="form-horizontal" form="frmVentaBicicleta" name="frmVentaBicicleta">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Venta de bicicletas</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="txtLocalizadorVenta">Localizador</label>
+                            <div class="col-xs-4">
+                                <input id="txtLocalizadorVenta" name="txtLocalizadorVenta" placeholder="Localizador"
+                                    class="form-control input-md" type="text">
+
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" for="btnVentaBicicleta"></label>
+                            <div class="col-xs-4">
+                                <input type="button" id="btnVentaBicicleta" name="btnVentaBicicleta"
+                                    class="btn btn-primary" value="Venta bicicleta" />
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/objetos.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
+</body>
+
+</html>
