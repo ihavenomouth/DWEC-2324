@@ -1,0 +1,14 @@
+
+body{
+  background-color: #333;
+  color: whitesmoke;
+}
+
+dialog::backdrop{ 
+  background-color: #3366; 
+  backdrop-filter: blur(1px);
+}
+
+dialog{
+  background-color: red;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+  <script src="code.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Diálogos y formularios</h1>
+  
+  <h2>Diálogos</h2>
+
+  <button id="btnMostrar">Mostrar diálogo</button>
+
+  <dialog id="dialogo">
+    <form method="dialog">
+      <p>Una pregunta comprometida. La tortilla es mejor...</p>
+      <button value="concebollista">Con cebolla</button>
+      <button value="sincebollista">Sin cebolla</button>
+    </form>
+  </dialog>
+
+
+<h2>Formulario</h2>
+
+<form name="formulario" method="get" action="f.php">
+  <label>Foo
+    <input name="foo">
+  </label>
+  <br>
+  <label>Bar
+    <input id="bar">
+  </label>
+
+  <input type="radio" name="rbOpcion" value="12">
+  <input type="radio" name="rbOpcion" value="23">
+
+</form>
+
+
+  <div id="divResultado"></div>
+
+  <h2>Algunos controles</h2>
+
+  <select name="provincias" id="provincias" multiple>
+    <option value="C">LaCoruña</option>
+    <option value="LU">Lugo</option>
+    <option value="OU">Ourense</option>
+    <option value="PO">Pontevedra</option>
+  </select>
+
+  <input type="color">
+</body>
+</html>

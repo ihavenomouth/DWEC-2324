@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <script src="code.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ejercicios 5b</h1>
+  
+  <h2>Ejercicio 1</h2>
+
+  <p><strong>Ejercicio 1:</strong> Crea una web con un cuadro de texto y una división, de modo que en el momento que se modifique el contenido del cuadro de texto éste aparezca automáticamente en la división.</p>
+  
+  <p><strong>Pista:</strong> el evento de teclado <em>keyup</em> es el que te interesa. </p>
+
+  <form name="frmEj1">
+    <label>Dato del ejercicio 1
+      <input type="text" name="txtEj1" id="txtEj1">
+    </label>
+  </form>
+
+  <div class="notice" id="divEj1"></div>
+
+
+
+  <h2>Ejercicio 2</h2>
+
+  <p><strong>Ejercicio 2:</strong> Crea una web que contenga un botón, una división y cuatro checkbox (mañana, tarde, noche) y al pulsar el botón se procederá así:</p>
+
+  <ul>
+    <li>comprobará que al menos una de las opciones está marcada y como máximo estarán marcadas dos.</li>
+    <li>si todo es correcto mostrará en la división las opciones seleccionadas</li>
+    <li>si no hay seleccionada ninguna opción o están marcadas todas, se mostrará un mensaje de error en la división</li>
+  </ul>
+
+  <form name="frmEj2">
+
+    
+    <label>
+      <input type="checkbox" name="ch1Ej2" id="ch1Ej2" value="mañana">
+      Mañana
+    </label>
+    
+    <label>
+      <input type="checkbox" name="ch2Ej2" id="ch2Ej2"  value="tarde">
+      Tarde
+    </label>
+
+    <label>
+      <input type="checkbox" name="ch3Ej2" id="ch3Ej2" value="noche">
+      Noche
+    </label>
+
+    <button id="btnEj2" type="button">Pulsar</button>
+
+  </form>
+
+  <div class="notice" id="divEj2"></div>
+
+
+  <h2>Ejercicio 3</h2>
+  <p><strong>Ejercicio 3:</strong> Crea una web que contenga diez textboxes de tipo number y varios botones:</p>
+
+  <ul>
+    <li>Botón Aleatorio: cuando se pulse el botón se rellenarán con valores aleatorios todos los textboxes</li>
+    <li>Botón Todos positivos: cuando se pulse el botón se mostrará un mensaje indicando si todos los valores son positivos</li>
+    <li>Botón Contar positivos: al pulsar el botón se mostrará un mensaje indicando cuántos valores son positivos</li>
+  </ul>
+
+  <form id="frmEj3">
+    <fieldset>
+      <legend>Datos</legend>
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </fieldset>
+    
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</body>
+</html>
