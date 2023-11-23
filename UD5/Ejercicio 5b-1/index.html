@@ -74,20 +74,75 @@
   <form id="frmEj3">
     <fieldset>
       <legend>Datos</legend>
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
+      <input type="number">
+      <input type="number">
+      <input type="number">
+      <input type="number">
+      <input type="number">
+      <input type="number">
+      <input type="number">
+      <input type="number">
+      <input type="number">
+      <input type="number">
     </fieldset>
-    
+    <button id="btnAleatorio" type="button">Aleatorio</button>
+    <button id="btnTodosPositivos" type="button">Todos positivos</button>
+    <button id="btnContarPositivos" type="button">Contar positivos</button>
   </form>
 
+  <div class="notice" id="divEj3"></div>
+
+  <h2>Ejercicio 4</h2>
+  <p><strong>Ejercicio 4:</strong> Crea una web que contenga un select con cuatro sabores de helado (vainilla, fresa, chocolate, nata) y un grupo de radio button con la nota de ese sabor (del 1 al 5 siendo 5 la mejor puntuación).</p> 
+  <p>Al pulsar en un botón con la etiqueta Votar, se almacenará en un array un objeto que contendrá dos valores: el sabor elegido y la puntuación elegida. Al pulsar otro botón se nos mostrará en un cuadro de diálogo cada sabor con el número de votos, su media y cuántas veces ha obtenido la puntuación máxima.</p>
+  
+  <form id="frm4">
+    <label for="selectHelado">Sabor de helado:</label>
+    <select name="selectHelado" id="selectHelado">
+      <option value="vainilla">Vainilla</option>
+      <option value="fresa">Fresa</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="nata">Nata</option>
+    </select>
+
+    <fieldset>
+      <legend>Puntuación</legend>
+      <input type="radio" name="rbNota" id="rbNota1" value="1"> 1 &nbsp; &nbsp; 
+      <input type="radio" name="rbNota" id="rbNota2" value="2"> 2 &nbsp; &nbsp; 
+      <input type="radio" name="rbNota" id="rbNota3" value="3"> 3 &nbsp; &nbsp; 
+      <input type="radio" name="rbNota" id="rbNota4" value="4"> 4 &nbsp; &nbsp; 
+      <input type="radio" name="rbNota" id="rbNota5" value="5"> 5 &nbsp; &nbsp; 
+    </fieldset>
+
+    <button type="button" id="btnVotar">Votar</button>
+    <button type="button" id="btnVervotaciones">Ver votaciones</button>
+  </form>
+
+
+<dialog id="ej4Dialogo">
+  <form method="dialog">
+    <p>Resultados de las votaciones</p>
+    <div id="divVerVotaciones"></div>
+
+    <button>Cerrar</button>
+  </form>
+</dialog>
+
+
+<h1>Ejercicio 5</h1>
+<p><span>Ejercicio 5:</span> Crea una web que contenga una división con el atributo contenteditable y que tenga entre sus reglas de estilo <code>overflow:scroll</code>. Por ejemplo:</p>
+
+<pre>
+  &lt;div id="divEditable" contenteditable style="overflow:scroll;width:200px;height:100px;"&gt;</div>
+</pre>
+
+<p>
+  Ahora se podrá escribir en la división. Haz que cuando se pulse la combinación de teclas <code>Ctrl+b</code> el contenido de la división aparezca en negrita. Si se pulsa Ctrl+i aparecerá en cursiva y si se pulsa <code>Ctrl+u</code> aparecerá subrayado.<br>
+  <strong>Amplíación</strong>: añade que si se pulsa <code>Ctrl++</code> se aumente el tamaño de letra únicamente para esa división y con <code>Ctrl+-</code> se disminuya.
+</p>
+
+
+  <div id="divEditable" class="notice" contenteditable style="overflow:scroll;width:500px;height:200px;"></div>
   <br>
   <br>
   <br>
