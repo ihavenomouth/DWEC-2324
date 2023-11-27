@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <script src="code.js" defer></script>
+</head>
+<body>
+  <h1>Ejercicios de expresiones regulares</h1>
+
+  <p><strong>Ejercicio</strong>: crea una expresión regular que indique si un código de producto es correcto. Un código de producto correcto comienza por dos números seguido de un guión y una vocal.</p>
+  <p>Ejemplos de códigos correctos: 12-e, 38-u </p>
+  <pre>
+    Sol: /^[0-9]{2}-[aeiou]$/.test(codigo)
+  </pre>
+
+  <p><strong>Ejercicio</strong>: crea una expresión regular que indique si una cadena de caracteres es un DNI válido. Es válido tanto si la letra está en mayúsculas como si no, tanto si está junto a los números como separados de ellos por un -.</p>
+
+  <p>Nota: no se trata de validar el caracter de control, sólo la forma del dato. </p>
+
+  <pre>
+  Sol: /^[0-9]{8}-?[a-z]$/i.test(dni)
+  </pre>
+
+  <p><strong>Ejercicio</strong>: se trata de crear una función que valide la contraseña de un usuario:</p>
+
+  <ul>
+    <li>Debe constar de exactamente 8 caracteres.</li>
+    <li>El primer caracter tiene que ser una i</li>
+    <li>Debe contener mayúsculas y minúsculas.</li>
+    <li>La contraseña debe terminar con un dígito (pueden aparecer dígitos en otras posiciones).</li>
+  </ul>
+
+  <pre>Sol:
+    const testPassword = (password) => {
+      let sol = /^i......[0-9]$/.test(password);
+      sol &&= /[a-z]/.test(password)
+      sol &&= /[A-Z]/.test(password)
+      return sol;
+    }
+  </pre>
+
+</body>
+</html>
