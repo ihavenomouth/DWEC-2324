@@ -6,20 +6,26 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   <script src="code.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-  <h1>Ejercicios de validción</h1>
+  <h1>Ejercicios de validación</h1>
 
   <h2>Ejercicio 6</h2>
 
-  <p>Crea un formulario cuyo atributo target sea _blank y que contenga:</p>
+  <p>Crea un formulario cuyo atributo target sea <code>_blank</code> y que contenga:</p>
 
     <ul>
-      <li>Un cuadro de texto para el nickname. No podrá tener menos de 3 letras ni más de 8. El campo es obligatorio y además, no podrá comenzar por un número ni contener los siguientes caracteres: .,:;</li>
+      <li>Un cuadro de texto para el nickname. No podrá tener menos de 3 letras ni más de 8. El campo es obligatorio y además, no podrá comenzar por un número ni contener los siguientes caracteres: <code>.,:;</code></li>
+
       <li>Dos cuadros de texto de tipo password para establecer un código PIN. Su tamaño será de 4 caracteres y todos tendrán que ser dígitos. El contenido de los dos cuadros de texto tendrán que ser el mismo. Estos campos son obligatorios también.</li>
+
       <li>Un radio button que permita seleccionar si se quiere indicar el día de nacimiento o no. Por defecto la opción seleccionada será No, pero si se selecciona Sí el usuario tendrá que rellenar los cuadros de texto de la sección de abajo.</li>
+
       <li>Una sección para establecer el día de nacimiento que conste de un cuadro de texto numérico para el día, otro para el mes y otro para el año. El día tendrá que estar entre el 1 y el 31, el mes entre el 1 y el 12 y el año tendrá estar entre 1900 y el año actual. Todos estos campos son obligatorios rellenarlos si se seleccionó la opción del Sí en el radio button de arriba.</li>
-      <li>Añade tres checkboxes para elegir dos colores de los tres disponibles: Rojo, Verde y Azul. El usuario tendrá que marcar dos opciones obligatoriamente.</li>
+
+      <li>Añade tres <em>checkboxes</em> para elegir dos colores de los tres disponibles: Rojo, Verde y Azul. El usuario tendrá que marcar dos opciones obligatoriamente.</li>
       <li>Añade un botón de Reset y otro de Enviar.</li>
     </ul>
 
@@ -27,20 +33,64 @@
 <p>Establece las opciones de validación de los controles en el HTML cuando sea posible.</p>
 <p>Haz que cuando se pulse el botón de Enviar se realice la validación del formulario antes de mandar los datos al servidor y si hay problemas se muestren en un cuadro de diálogo creado con la etiqueta &lt;dialog&gt;.</p>
 <p>Finalmente haz que el color de fondo del body de la página del formulario refleje los colores elegidos por el usuario (azul + rojo = morado, rojo + verde = amarillo, azul + verde = turquesa). </p>
+
   <h3>Solución</h3>
-  <form target="_blank">
+  <form id="frmEj6" target="_blank">
     <label>
-      Nickname <input required minlength="4" maxlength="8" pattern="^[^0-9.,:;][^.,:;]*$" type="text" name="txtNickname" id="txtNickname">
+      <p>El nickname no puede empezar por número ni contener algunos caracteres (.,;:). La longitud permitida es entre 3 y 8 caracteres.</p>
+      Nickname <br>
+      <input required minlength="3" maxlength="8" type="text" name="txtNickname" id="txtNickname">
     </label>
 
     <label>
-      Password <input required type="password" name="txtPassword1" id="txtPassword1">
+      Password <br>
+      <input required minlength="4" maxlength="8" type="password" name="txtPassword1" id="txtPassword1">
     </label>
     <label>
-      Introduzca el password de nuevo <input required type="password" name="txtPassword2" id="txtPassword2">
+      Introduzca el password de nuevo<br> 
+      <input required minlength="4" maxlength="8" type="password" name="txtPassword2" id="txtPassword2">
     </label>
 
+    <fieldset>
+      <legend>Fecha de nacimiento</legend>
+      <p>¿Desea indicar su fecha de nacimiento?</p>
+      <label><input type="radio" checked name="rbNacimiento" value="si"> Sí</label><br>
+      <label><input type="radio" name="rbNacimiento" value="no"> No</label><br>
+
+      <br>
+
+      <label for="txtDia">Día de nacimiento</label>
+      <input type="number" name="txtDia" id="txtDia">
+
+      <label for="txtMes">Mes de nacimiento</label>
+      <input type="number" name="txtMes" id="txtMes">
+
+      <label for="txtAno">Año de nacimiento</label>
+      <input type="number" name="txtAno" id="txtAno">
+    </fieldset>
+
+    <fieldset>
+      <legend>Colores</legend>
+      <p>Marque dos de las tres opciones.</p>
+      <label><input type="checkbox" name="chRojo" value="rojo"> Rojo</label><br>
+
+      <label><input type="checkbox" name="chVerde" value="verde"> Verde</label><br>
+
+      <label><input type="checkbox" name="chAzul" value="azul"> Azul</label><br>
+    </fieldset>
+    
+    <button id="btnEnviar">Enviar</button>
+    <input type="reset" value="Reset">
   </form>
+
+
+  <dialog id="dialogo">
+    <form method="dialog">
+      <div id="divErrores"></div>
+      <button>Cerrar</button>
+    </form>
+  </dialog>
+  
 
 </body>
 </html>

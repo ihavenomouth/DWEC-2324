@@ -1,0 +1,8 @@
+
+
+dialog::backdrop{ background-color: #3366; }
+
+input:invalid{
+  outline:1px solid red;
+}
+
