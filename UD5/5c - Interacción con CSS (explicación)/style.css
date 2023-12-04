@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+	background-color: #aaeecc;
+	color: #444;
+	font-family: roboto, arial, sans-serif;
+}
+
+form, #divResultado{
+	margin: 1rem;
+	border: 2px solid black;
+	background-color: white;
+	padding: 1rem;
+	max-width: 60ch;
+	border-radius: 10px;
+}
+
+input{
+	border: 2px solid black;
+	margin: 0.5rem;
+	padding: 0.25rem;
+}
+
+.btn{
+	padding: 0.5rem;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+.danger{
+	background-color: red;
+}
+.info{
+	background-color: skyblue;
+}
+
+.success{
+	background-color: aquamarine;
+}
