@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios de interacción con el CSS</title>
+  
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <script defer src="code.js"></script>
+</head>
+<body>
+
+  <h1>Ejercicios de interacción con el CSS</h1>
+
+  <h2>Ejercicio 3</h2>
+
+  <p>Crea una web que contenga un cuadro de texto y un botón con la etiqueta <em>Añadir</em> que añada el contenido del cuadro de texto a una lista.</p>
+  <p>También habrá un botón con la etiqueta <em>Colorear</em>. Al pulsar este botón se colorearán los ítems de la lista con estilos en línea (con la etiqueta <code>style</code>) de la siguiente manera:</p>
+  
+  
+      <ul>
+        <li>Los que tengan un número de caracteres impar tendrán un color de fondo rojo y letras en blanco.</li>
+        <li>Los que tengan un número de caracteres par tendrán un color de fondo <code>golden-rod</code>.</li>
+      </ul>
+  
+
+<h2>Ejercicio 3: solución</h2>
+
+  <form>
+    <label>Ítem:</label>
+    <input type="text" name="txtItem" id="txtItem"><br><br>
+    <button type="button" id="btnAnadir">Añadir</button>
+    <button type="button" id="btnColorear">Colorear</button>
+  </form>
+
+  <ul id="lista"></ul>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe earum laudantium voluptatem dolorum, voluptatum ipsa, pariatur qui veniam nemo maiores, eveniet veritatis non eaque autem nobis! Excepturi quasi sequi dolore?</p>
+
+
+</body>
+</html>

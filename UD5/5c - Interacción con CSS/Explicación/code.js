@@ -13,18 +13,21 @@ let btn = document.querySelector("#btnAccion");
 let divResultado = document.querySelector("#divResultado");
 
 
-// btn.style="border-radius: 5px"
-// btn.style.borderRadius= "5px";
+// btn.style="border-radius: 5px; opacity:0.5;"
+
+// btn.style.borderRadius= "15px";
 // btn.style.paddingLeft = "30px";
 
-// divResultado.innerHTML+=`<p>${btn.classList}</p>`;
-// divResultado.innerHTML+=`<p>${btn.classList[0]}</p>`;
+divResultado.innerHTML+=`<p>${btn.classList}</p>`;
+divResultado.innerHTML+=`<p>${btn.classList[0]}</p>`;
 
 // btn.classList="btn info";
+
+
 // btn.classList.replace("danger", "success");
 
-// btn.classList.toggle("danger");
-// btn.classList.toggle("danger");
+btn.classList.toggle("danger");
+btn.classList.toggle("danger");
 
 
 
