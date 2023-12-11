@@ -3,9 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Ejercicios del DOM</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+  <script src="code.js" defer></script>
 </head>
 <body>
-  
+  <h1>Ejercicios del DOM</h1>
+
+  <h2>Ejercicio 1</h2>
+
+  <p><strong>Ejercicio 1</strong>: dado este HTML, recupera el elemento con <code>id="resultado"</code>. Y partiendo de él realiza las siguientes operaciones navegando por el DOM con los métodos vistos:</p>
+
+  <ol>
+    <li>Cambia el texto del párrafo para que indique "Lista de animales".</li>
+    <li>Haz que el último elemento de la lista indique "Lobo".</li>
+    <li>Haz que el texto en negrita sea "de agua".</li>
+    <li>Haz que se muestre por pantalla el contenido del último párrafo.</li>
+  </ol>
+
+
+
+  <div id="resultado">
+    A continuación tenemos una lista de animales.
+    <p>Animales</p>
+    <ul>
+      <li>Zorro</li>
+      <li>Gato</li>
+      <li>Perro <strong>pastor</strong></li>
+      <li>Loro</li>
+    </ul>
+
+    <p>Fin de la lista de animales.</p>
+    Ahora es tu turno para construir una lista de plantas.
+  </div>
+
+  <div class="notice" id="divEj1"></div>
+
+
+  <h2>Ejercicio 2</h2>
+
+  <p>Partiendo del HTML de arriba, quita el atributo id de la etiqueta <code>&lt;div&gt;</code> (a mano, no con código) y añádeselo al <code>&lt;strong&gt;</code>. Repite el ejercicio a partir de ese elemento. </p>
+
+  <div>
+    A continuación tenemos una lista de animales.
+    <p>Animales</p>
+    <ul>
+      <li>Zorro</li>
+      <li>Gato</li>
+      <li>Perro <strong id="resultado2">pastor</strong></li>
+      <li>Loro</li>
+    </ul>
+
+    <p>Fin de la lista de animales.</p>
+    Ahora es tu turno para construir una lista de plantas.
+  </div>
+
+  <div class="notice" id="divEj2"></div>
+
 </body>
 </html>
