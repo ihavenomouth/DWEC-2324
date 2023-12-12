@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3</title>
+  <script src="code.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+  <h1>Ejercicios DOM</h1>
+
+  <h2>Ejercicio 4</h2>
+
+  <p>Crea una web con tres listas sin ordenar y un par de radio buttons.</p>
+  <p>La primera lista tendrá una serie de nombres de alumnos. La segunda tendrá una serie de alumnos aprobados y la tercera alumnos suspensos.</p>
+  <p>Las opciones del radio button serán dos: aprobado y suspenso.</p>
+  <p>Si se pulsa sobre un alumno de la primera lista y está seleccionada la opción aprobado, se moverá a la lista de aprobados como último elemento.</p>
+  <p>Si se pulsa sobre un alumno de la primera lista y está seleccionada la opción suspenso, se moverá a la lista de suspensos como primer elemento.</p>
+  <p>Finalmente si se pulsa sobre un alumno de la lista de suspenso, volverá a la primera lista de alumnos.</p>
+  
+  <p>Parte de esta lista de alumnos:</p>
+  
+  <h3>Alumnos</h3>
+  <ul id="listaAlumnos">
+    <li>Tomás Tuerzo</li>
+    <li>Aitor Tilla</li>
+    <li>Sara Mago</li>
+    <li>Pancho Colate</li>
+    <li>Ana Tema</li>
+    <li>Armando Bronca</li>
+    <li>Aitor Menta</li>
+  </ul>
+
+  <h3>Situación</h3>
+
+  <form id="frmEj1">
+    <label>
+    <input type="radio" name="rbAlumno" value="aprobado"> Aprobado
+    </label>
+    <label>
+    <input type="radio" name="rbAlumno" value="suspenso"> Suspenso
+    </label>
+  </form>
+
+  <div style="display:flex; gap:1rem;">
+    <div class="notice">
+      <h3>Alumnos aprobados</h3>
+      <ul id="alumnosAprobados"></ul>
+    </div>
+
+    <div class="notice">
+      <h3>Alumnos suspensos</h3>
+      <ul id="alumnosSuspensos"></ul>
+    </div>
+  </div>
+
+
+
+
+
+
+  <h2>Ejercicio 5</h2>
+  <p>Crea una tabla HTML con los datos de la lista original. Esta lista tendrá dos columnas: nombre y apellido.</p>
+  <p>Añade un botón que al ser pulsado ordene la tabla por el nombre.</p>
+  
+  <p>Añade un cuadro de búsqueda y un botón. Al pulsar el botón se mostrará un listado de los alumnos cuyo nombre comience con el contenido del cuadro de búsqueda.</p>
+  
+  <p>Posible solución (sería mejor usar un <code>localCompare</code>):</p>
+  
+  <pre>
+  let tbody = document.querySelector("table tbody");
+  
+  Array.from(tbody.children).toSorted( (f1,f2) => f1.children[0].innerText>f2.children[0].innerText).forEach( fila => {
+    tbody.appendChild(fila);
+  });
+  </pre>
+  
+
+  <table>
+    <caption>Listado de alumnos</caption>
+    <thead><tr><th>Nombre</th><th>Apellidos</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Tomás</td><td>Tuerzo</td>
+      </tr>
+      <tr>
+        <td>Aitor</td><td>Tilla</td>
+      </tr>
+      <tr>
+        <td>Sara</td><td>Mago</td>
+      </tr>
+      <tr>
+        <td>Pancho</td><td>Colate</td>
+      </tr>
+      <tr>
+        <td>Ana</td><td>Tema</td>
+      </tr>
+      <tr>
+        <td>Armando</td><td>Bronca</td>
+      </tr>
+      <tr>
+        <td>Aitor</td><td>Menta</td>
+      </tr>
+      </tbody>
+  </table>
+
+  <form>
+    <button type="button" id="btnOrdenar">Ordenar por nombre</button>
+    <label>Nombre: 
+      <input type="text" name="txtNombre" id="txtNombre">
+    </label>
+    <button type="button" id="btnBuscar">Buscar</button>
+  </form>
+
+  <div class="notice" id="divEj2"></div>
+</body>
+</html>
