@@ -77,10 +77,10 @@
   </pre>
   
 
-  <table>
+  <table id="tej5">
     <caption>Listado de alumnos</caption>
     <thead><tr><th>Nombre</th><th>Apellidos</th></tr></thead>
-    <tbody>
+    <tbody data-orden="descendente">
       <tr>
         <td>Tomás</td><td>Tuerzo</td>
       </tr>
@@ -114,5 +114,56 @@
   </form>
 
   <div class="notice" id="divEj2"></div>
+
+
+
+
+
+
+
+  <h2>Ejercicio 6</h2>
+  <p>Partiendo de la lista de alumnos de abajo crea una tabla con dos columnas usando únicamente métodos de manipulación del DOM.</p>
+  <p>La tabla se creará al pulsar un botón de crear tabla.</p>
+
+  <p>Parte de esta lista de alumnos:</p>
+
+<ul id="ej6listaAlumnos">
+  <li>Tomás Tuerzo</li>
+  <li>Aitor Tilla</li>
+  <li>Sara Mago</li>
+  <li>Pancho Colate</li>
+  <li>Ana Tema</li>
+</ul>
+
+
+<p>Añade un formulario con dos cuadros de texto (nombre y apellido) y un botón que permita añadir un elemento a la lista y a la tabla simultáneamente como último elemento.</p>
+
+<p>Añade un checkbox para indicar si se quiere añadir el nuevo alumno al final de la lista/tabla.</p>
+
+<p>Añade un manejador de evento delegado en la lista que permita que al hacer click sobre un elemento se coloque el primero.</p>
+
+<p>Añade un manejador de evento delegado en la tabla que permita que al hacer click sobre una fila de la tabla que contenga datos (no la cabecera) cree un clon y lo añada al final de la misma.</p>
+
+  <form>
+    <button type="button" id="btnCrearTabla">Crear tabla</button>
+    <fieldset>
+      <legend>Añadir alumno</legend>
+      
+      <label for="txtNombreAlumno">Nombre</label>
+      <input type="text" name="txtNombreAlumno" id="txtNombreAlumno">
+      
+      <label for="txtApellidoAlumno">Apellido</label>
+      <input type="text" name="txtApellidoAlumno" id="txtApellidoAlumno">
+      <br>
+      <br>
+      <input type="checkbox" name="txtInicio" id="txtInicio">
+      <label for="txtInicio">Insertar al inicio</label>
+      <br>
+      
+      <br>
+      <button type="button" id="btnAñadirAlumno">Añadir alumno</button>
+    </fieldset>
+  </form>
+
 </body>
 </html>
