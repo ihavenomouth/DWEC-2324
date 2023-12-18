@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ejercicio Listas deplegables</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+</head>
+
+<body>
+  <form class="form-horizontal">
+    <fieldset>
+      <!-- Form Name -->
+      <legend>Ejercicio 1 - Desplegables multiples</legend>
+      <div class="row">
+        <div id="capaIzq" class="col-xs-6">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtProvincia">Provincia</label>
+            <div class="col-md-4">
+              <input id="txtProvincia" name="txtProvincia" type="text"
+                placeholder="Nombre de la provincia, p.e. Sevilla" class="form-control input-md" />
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtCodProvincia">Código de provincia</label>
+            <div class="col-md-4">
+              <input id="txtCodProvincia" name="txtCodProvincia" type="text"
+                placeholder="Código de la provincia, p.e. SE" class="form-control input-md" />
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnAgregar"></label>
+            <div class="col-md-4">
+              <input type="button" id="btnAgregar" name="btnAgregar" class="btn btn-primary"
+                value="Agregar provincia" />
+            </div>
+          </div>
+
+          <div class="form-inline col-md-offset-4">
+            <!-- Select Multiple -->
+            <div class="form-group">
+              <div class="col-md-4 ">
+                <select id="lstIzquierda" name="lstIzquierda" class="form-control" multiple="multiple">
+                  <option value="CA">Cádiz</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="btnDerecha"></label>
+              <div class="col-md-4">
+                <input type="button" id="btnDerecha" name="btntDerecha" class="btn btn-primary" value=">" />
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="txtIzquierda"></label>
+              <div class="col-md-4">
+                <input type="button" id="btnIzquierda" name="btnIzquierda" class="btn btn-primary" value="<" />
+              </div>
+            </div>
+
+            <!-- Select Multiple -->
+            <div class="form-group">
+              <div class="col-md-4">
+                <select id="lstDerecha" name="lstDerecha" class="form-control" multiple="multiple">
+                  <option value="CO">Córdoba</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <br>
+        </div>
+        <div id="capaDer" class="col-xs-6">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnMoverTodoIzquierda"></label>
+            <div class="col-md-4">
+              <input type="button" id="btnMoverTodoIzquierda" name="btnMoverTodoIzquierda" class="btn btn-primary"
+                value="Mover todo a izquierda" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnMoverTodoDerecha"></label>
+            <div class="col-md-4">
+              <input type="button" id="btnMoverTodoDerecha" name="btnMoverTodoDerecha" class="btn btn-primary"
+                value="Mover todo a derecha" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnBorrarIzquierda"></label>
+            <div class="col-md-4">
+              <input type="button" id="btnBorrarIzquierda" name="btnBorrarIzquierda" class="btn btn-primary"
+                value="Borrar izquierda" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnBorrarDerecha"></label>
+            <div class="col-md-4">
+              <input type="button" id="btnBorrarDerecha" name="btnBorrarDerecha" class="btn btn-primary"
+                value="Borrar derecha" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnListarIzquierda"></label>
+            <div class="col-md-4">
+              <input type="button" id="btnListarIzquierda" name="btnListarIzquierda" class="btn btn-primary"
+                value="Listar izquierda" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnListarDerecha"></label>
+            <div class="col-md-4">
+              <input type="button" id="btnListarDerecha" name="btnListarDerecha" class="btn btn-primary"
+                value="Listar derecha" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="chkClonar"></label>
+            <div class="col-md-4">
+              <label class="checkbox-inline" for="chkClonar-0">
+                <input type="checkbox" name="chkClonar" id="chkClonar-0" value="Clonar">
+                Clonar
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
