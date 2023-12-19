@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Mooli:regular);
+
+*,:after,::before{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Mooli,Arial, Helvetica, sans-serif;
+	margin:0 auto;
+	max-width: 40rem;
+}
+
+h1{
+	background-color: brown;
+	color:aliceblue;
+	text-align: center;
+	padding: 1rem;
+}
+
+h2{
+	color: brown;
+	text-decoration: underline;
+}
+
+p{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+img{
+	margin: 0 auto;
+	display: block;
+	width: 300px;
+	box-shadow: 5px 5px 5px #ddd;
+}
+
+pre{
+	padding: 1rem;
+	background-color: lightslategray;
+	color: white;
+	border-radius: 5px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+strong{
+	background-color: brown;
+	color:white;
+}
+em{
+	background-color: lightcoral;
+}

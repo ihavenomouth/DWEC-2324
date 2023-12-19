@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos>
+    <pelicula>
+        <nombre>Bruce Almighty</nombre>
+        <actor>Jim Carrey</actor>
+        <director>Tom Shadyac</director>
+        <categoria>Comedy</categoria>
+    </pelicula>
+    <pelicula>
+        <nombre>Office Space</nombre>
+        <actor>Ron Livingston</actor>
+        <director>Mike Judge</director>
+        <categoria>Comedy</categoria>
+    </pelicula>
+    <pelicula>
+        <nombre>Grand Canyon</nombre>
+        <actor>Kevin Kline</actor>
+        <director>Lawrence Kasdan</director>
+        <categoria>Drama</categoria>
+    </pelicula>
+    <pelicula>
+        <nombre>Liberad a Willy</nombre>
+        <actor>Jason James Richter</actor>
+        <director>Simon Wincer</director>
+        <categoria>Kids</categoria>
+    </pelicula>
+    <pelicula>
+        <nombre>Solo en casa</nombre>
+        <actor>Macaulay Culkin</actor>
+        <director>Chris Columbus</director>
+        <categoria>Kids</categoria>
+    </pelicula>
+    <pelicula>
+        <nombre>Planeta Rojo</nombre>
+        <actor>Val Kilmer</actor>
+        <director>Antony Hoffman</director>
+        <categoria>Sci Fi</categoria>
+    </pelicula>
+</datos>

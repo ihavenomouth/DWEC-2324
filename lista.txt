@@ -1,0 +1,25 @@
+./UD4/4c Objetos/Ejercicio perros/favicon.ico
+./UD4/4c Objetos/favicon.ico
+./UD4/4c Objetos/Explicación/favicon.ico
+./UD6 - DOM/Ejercicios 7/favicon.ico
+./UD6 - DOM/Ejercicio 3/favicon.ico
+./UD6 - DOM/Ejercicios 4, 5 y 6/favicon.ico
+./UD6 - DOM/Ejercicio 8/favicon.ico
+./UD7/Explicaciones/3 Orden de ejecución/favicon.ico
+./UD7/Explicaciones/2 Ejemplo XMLHttpRequest leerXML/favicon.ico
+./UD7/Explicaciones/1 Callbacks/favicon.ico
+./UD5/5b Diálogo y formularios/Ejercicio 5b-1/favicon.ico
+./UD5/5b Diálogo y formularios/Validación de formularios/favicon.ico
+./UD5/5b Diálogo y formularios/favicon.ico
+./UD5/5b Diálogo y formularios/Expresiones regulares/favicon.ico
+./UD5/Eventos/Explicación y ejercicios 5a-1 y 5a-2/favicon.ico
+./UD5/Eventos/Ejercicio 10/favicon.ico
+./UD5/Eventos/Ejercicios eventos 3-5/favicon.ico
+./UD5/Eventos/Editor de imágenes/favicon.ico
+./UD5/Eventos/Eventos (fases)/favicon.ico
+./UD5/Eventos/Ejercicios eventos 7/favicon.ico
+./UD5/Eventos/Ejercicios eventos 9/favicon.ico
+./UD5/5c - Interacción con CSS/Ejercicio 1/favicon.ico
+./UD5/5c - Interacción con CSS/Explicación/favicon.ico
+./UD5/5c - Interacción con CSS/Ejercicio 2/favicon.ico
+./UD5/5c - Interacción con CSS/Ejercicio 3/favicon.ico
