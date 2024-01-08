@@ -1,0 +1,32 @@
+#menu{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.card h5{
+  text-align: center;
+}
+
+.card{
+  flex: 1 0 250px;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card div{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  background-color: #eee;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+span{
+  font-weight: 700;
+}

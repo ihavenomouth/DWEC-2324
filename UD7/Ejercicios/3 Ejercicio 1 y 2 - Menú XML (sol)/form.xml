@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <title>Postre</title>
+  <select id="slPostre"></select>
+  <input_number>Cantidad</input_number>
+  <button type="button" id="btnAnadir">Añadir al pedido</button>
+</form>
