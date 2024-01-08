@@ -34,16 +34,19 @@ function loadXMLDoc(filename, callback) {
 }
 
 
-
+/**
+ * Genera un conjunto de <option> y los añade al <select id="#slPostre">
+ * @param {XMLDocument} xml 
+ */
 const crearOptions = (xml) => {
   const select = document.querySelector("#slPostre");
   xml.querySelectorAll("name").forEach( (name, i)=>{
-    let o = document.createElement("option");
-    o.value=i;
-    o.innerText = name.textContent;
-    select.append(o);
+    let option = document.createElement("option");
+    option.value = i;
+    option.innerText = name.textContent;
+    select.append(option);
   });
-  console.log(select)
+  // console.log(select);
 }
 
 
