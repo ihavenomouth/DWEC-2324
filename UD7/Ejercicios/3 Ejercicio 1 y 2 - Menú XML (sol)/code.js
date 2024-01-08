@@ -107,7 +107,10 @@ const crearForm = (xml) =>{
 
 
 
-
+/**
+ * Genera una Card por cada comida en el menú que se lee desde un fichero XML
+ * @param {XMLDocument} xml 
+ */
 const crearCards = (xml) =>{
   const menu = document.querySelector("#menu");
 
