@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <title>Leer CSV</title>
+  <script src="code.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Comunicación asíncrona</h1>
+
+  <h2>Ejercicio 6</h2>
+  <p>Crea una web que al cargar haga una llamada a la API Rest <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users</a> que devuelve 10 usuarios y muestra en una tabla de cada usuario el nombre del usuario (el username), el e-mail, el sitio web y la ciudad en la que vive. El id de cada usuario se almacenará en un atributo data-id de la fila.</p>
+
+  <p>Nota: No almacenes la respuesta en una variable, queremos usar este ejercicio para practicar llamadas al servidor.</p>
+  
+  <p>Cuando se pulse en uno de los usuarios, se recuperará el id del usuario del data-id y se realizará una llamada para recuperar más información de ese usuario concreto. Por ejemplo, si el usuario elegido es el 5 se llamará a https://jsonplaceholder.typicode.com/users/5</p>
+  
+  <p>Se mostrará en una división abajo el detalle del usuario elegido, se mostrará concretamente el nombre completo y el nombre de su compañía. </p>
+
+  <form>
+    <button type="button" id="btnIniciar">Cargar datos</button>
+  </form>
+  <div id="divResultado" class="notice">
+  </div>
+  <table id="tablaResultado"></table>
+  <ul id="datosUsuario"></ul>
+
+
+</body>
+</html>

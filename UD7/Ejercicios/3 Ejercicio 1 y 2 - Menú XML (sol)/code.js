@@ -116,7 +116,6 @@ const crearCards = (xml) =>{
 
   xml.querySelectorAll("food").forEach(
     f=>{
-
     const div = document.createElement("div");
     div.classList.add("card");
     
@@ -135,7 +134,6 @@ const crearCards = (xml) =>{
     `;
     menu.append(div);
   });
-
 }
 
 const cargarMenu = function () {

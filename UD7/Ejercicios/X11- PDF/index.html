@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Pruebas de programación web</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+<!-- Importa la biblioteca jsPDF -->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- Importa la biblioteca AutoTable después de jsPDF -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.15/jspdf.plugin.autotable.min.js"></script>
+	
+	<script defer src="code.js"></script>
+</head>
+
+<body>
+
+	<h1>Pantalla de inicio</h1>
+
+	<input type="text" id="txtTítulo" placeholder="Título del documento" value="Título del documento">
+	<textarea id="txtTexto" placeholder="Contenido del documento"></textarea>
+	<br>
+	<button type="button" id="btnAcción" >Acción</button>
+	<button type="button" id="btnGenerar">Generar</button>
+
+</body>
+
+</html>

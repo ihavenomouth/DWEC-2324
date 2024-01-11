@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <title>Leer CSV</title>
+  <script src="code.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Comunicación asíncrona</h1>
+
+  <h2>Ejercicio 4</h2>
+   <p>Usando la API Fetch, muestra en un documento HTML bien presentado la información que devuelve las siguientes llamadas a una API</p>
+
+  <ol>
+    <li>https://mocktarget.apigee.net/xml (devuelve un documento XML que habrá que parsear)</li>
+    <li>https://mocktarget.apigee.net/iloveapis (devuelve HTML)</li>
+    <li>https://mocktarget.apigee.net/json (devuelve un objeto JSON)</li>
+  </ol>
+
+
+<p>Para el primer y tercer aparado utiliza <code>async/await</code>, para el segundo utiliza <code>then/catch</code>. </p>
+
+<h3>Apartado 1</h3>
+  <form>
+    <button type="button" id="btnApartado1">Realizar petición</button>
+  </form>
+  <div id="divResultadoApartado1" class="notice"></div>
+
+  <h3>Apartado 2</h3>
+  <form>
+    <button type="button" id="btnApartado2">Realizar petición</button>
+  </form>
+  <div id="divResultadoApartado2" class="notice"></div>
+
+  <h3>Apartado 3</h3>
+  <form>
+    <button type="button" id="btnApartado3">Realizar petición</button>
+  </form>
+  <div id="divResultadoApartado3" class="notice"></div>
+
+</body>
+</html>
