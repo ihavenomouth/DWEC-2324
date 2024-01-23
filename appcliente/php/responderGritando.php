@@ -1,7 +1,7 @@
 <?php
 
 // Ejercicio 1.a
-//echo "<p>Hola caracola</p>";
+//echo "Hola caracola";
 
 //Ejercicio 1.b
 $mensaje = trim($_GET['txtMensaje'] ?? '');

@@ -1,0 +1,39 @@
+.team {
+	border: 2px solid deeppink;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1rem;	
+	background-color: lavender;
+	border-radius: 5px;
+}
+
+.teamMember {
+	flex: 1 1 0;
+	background-color: aliceblue;
+	border: 2px solid deeppink;
+	margin: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	min-width: 300px;
+}
+
+.team img {
+	width: 40%;
+	background-color: deeppink;
+	border-radius: 35%;
+	display: inline;
+}
+
+.teamMember > div{
+	padding-left: 1rem;
+}
+
+.teamMember p:nth-of-type(1){
+	font-weight: bold;
+	filter: invert();
+	filter: drop-shadow(0px 2px 5px deeppink);
+	width: 100%
+}
