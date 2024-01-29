@@ -1,11 +1,13 @@
 import './App.css';
 
-import ConversorKMaMillas from './componentes/conversorKMaMillas';
+import Encabezado from './componentes/Encabezado';
+import Rutas from './componentes/Rutas';
 
 const App = () =>{
 
   return (<>
-   <ConversorKMaMillas />
+    <Encabezado/>
+    <Rutas/>
   </>);
 }
 
