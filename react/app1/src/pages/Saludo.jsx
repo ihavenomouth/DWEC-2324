@@ -1,15 +1,17 @@
 import Menu from '../componentes/Menu';
+import Formulario from '../componentes/Formulario';
+import MostrarDatos from '../componentes/MostrarDatos';
+import { AppContextProvider } from '../context/AppContext';
 
 const Saludo = () => {
   return (<>
     <Menu />
     <h2>Hola caracola</h2>
-    <form>
-      <label>Dato</label><br/>
-      <input type="text"></input><br/>
-      <br/>
-      <button>Acción</button>
-    </form>
+    <AppContextProvider>
+      <Formulario />
+      <MostrarDatos />
+
+    </AppContextProvider>
   </>);
 }
 export default Saludo;
